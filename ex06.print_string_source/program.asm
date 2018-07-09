@@ -3,6 +3,8 @@ section .data
 
 hello_world: db 'Hello, World!', 0
 
+section .text
+
 global _start
 extern print_string
 
