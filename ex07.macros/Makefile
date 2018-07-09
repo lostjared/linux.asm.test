@@ -1,12 +1,13 @@
 SOURCE=mac
+FORMAT=elf64
 
 all: mac
 
 print.o: print.asm
-	nasm -f elf64 print.asm -o print.o
+	nasm -f $(FORMAT) print.asm -o print.o
 
 $(SOURCE).o: $(SOURCE).asm
-	nasm -f elf64 $(SOURCE).asm -o $(SOURCE).o
+	nasm -f $(FORMAT) $(SOURCE).asm -o $(SOURCE).o
 
 
 $(SOURCE):  print.o $(SOURCE).o
