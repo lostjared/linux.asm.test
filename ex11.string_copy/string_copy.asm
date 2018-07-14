@@ -1,5 +1,5 @@
 
-; fill array with A-Z through loop
+; concat strings 
 
 %define EXIT_CODE 60
 
