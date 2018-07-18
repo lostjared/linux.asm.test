@@ -1,17 +1,16 @@
 
-global main
-extern readfile
-extern exit
+global _main
+extern _readfile
 
 section .data
 filename: db 'print.asm', 0
 
 section .text
 
-main:
+_main:
+	push rbx
 	lea rdi, [rel filename]
-	call readfile
-	mov rdi, 0
-	call exit
+	call _readfile
+	pop rbx
 	ret
 

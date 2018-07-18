@@ -1,5 +1,5 @@
-SOURCE=readtest-ex
-FORMAT=elf64
+SOURCE=readtest-ex_mac
+FORMAT=macho64
 
 all: $(SOURCE)
 
